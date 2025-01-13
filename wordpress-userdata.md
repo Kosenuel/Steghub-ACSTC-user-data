@@ -3,7 +3,7 @@
 exec > /var/log/wordpress.log 2>&1
 
 mkdir -p /var/www/
-sudo mount -t efs -o tls,accesspoint=fsap-04d9a7dbdc13339b6 fs-0a71d71a5e6a321e6:/ /var/www/
+sudo mount -t efs -o tls,accesspoint=fsap-01dc000d3b226bc66 fs-00391886ce8ea46f4:/ /var/www/
 
 # Install and start Apache
 sudo yum install -y httpd

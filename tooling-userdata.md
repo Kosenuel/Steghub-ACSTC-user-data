@@ -4,7 +4,7 @@ exec > /var/log/tooling.log 2>&1
 
 # Create directory and mount EFS
 mkdir -p /var/www/
-sudo mount -t efs -o tls,accesspoint=fsap-01060d13e30957a51 fs-0a71d71a5e6a321e6:/ /var/www/
+sudo mount -t efs -o tls,accesspoint=fsap-0a21d16ea88d06d40 fs-00391886ce8ea46f4:/ /var/www/
 
 # Install and start Apache
 sudo yum install -y httpd
